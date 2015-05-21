@@ -9,7 +9,7 @@ function setAlarm(){
   // Set the alarm when the toggle or clock is changed
 
   var alarmTime = rome(document.getElementById("time")).getDateString();
-  var isChecked = document.getElementById("remindme").checked;
+  var isChecked = document.getElementById("cmn-toggle-9").checked;
   var weekdays = document.getElementById("weekdays").checked;
   var weekends = document.getElementById("weekends").checked;
 
@@ -60,7 +60,7 @@ chrome.storage.local.get(["alarmTime","alarmToggle", "weekdays", "weekends"] , f
     time: true
 
   }).on('data', setAlarm);
-  var checkbox = document.getElementById('remindme');
+  var checkbox = document.getElementById('cmn-toggle-9');
   var weekends = document.getElementById('weekends');
   var weekdays = document.getElementById('weekdays');
   if (result.alarmToggle) {
@@ -81,9 +81,25 @@ chrome.storage.local.get(["alarmTime","alarmToggle", "weekdays", "weekends"] , f
 });
 
 
-jQuery("#remindme").live('click', function() {
-    $("#reminderSet").toggle(5);
-//    $("#reminderNotSet").toggle(1000);
+$('body').on('click', "#cmn-toggle-9", function() {
+  var $reminder;
+  if ($('#cmn-toggle-9').prop('checked')) {
+    $reminder = $('#reminderSet');
+  }
+  else {
+    $reminder = $('#reminderNotSet');
+  }
+    $reminder.show({
+      complete: function(){
+        setTimeout(function(){
+        
+            $reminder.hide({
+              duration: 500
+            });
+        }, 500);
+      }
+    
+    });
 });
 
 

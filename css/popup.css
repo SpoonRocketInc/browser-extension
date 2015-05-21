@@ -193,6 +193,7 @@ line-height:10px;
 display:none;
 }
 #reminderNotSet{
+  display: none;
 }
 /*========================
    link to spoonrocket
