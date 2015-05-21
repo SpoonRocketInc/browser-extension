@@ -4,39 +4,53 @@
     <link rel="stylesheet" type="text/css" href="css/rome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/popup.css" />
     <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/rome.standalone.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+ 	<link href="css/style.css" rel="stylesheet">
+
   </head>
   <body>
     <div id="reminders">
       <h1 id="spoonrockethed">
         <a id="hedlink" href="https://www.spoonrocket.com" target="_blank">
-          <img id="roundlogo" height="32" src="icons/roundlogo.png" />SpoonRocket
+          <img id="roundlogo" height="40" src="icons/roundlogo.png" />
         </a>
       </h1>
-      <h2>Remind Me</h2>
+      <h2>Don't Forget to Eat!</h2>
 
-      Tired of forgetting to order food until you're already beyond hungry? Let us know when you want to order, and we'll pop up a quick no-pressure reminder.
+      <p>Let us know when you want to order,<br>
+      and we'll pop up a quick reminder.
+      </p>
 
       <div id="clock">
         <div id="time">
         </div>
         <div id="clockInput">
-          <input id="weekdays" type="checkbox">Monday - Friday</input>
-          <input id="weekends" type="checkbox">Saturday/Sunday</input>
-          <input id="remindme" type="checkbox"></input>
-          <label id="labelRemindMe">Remind me</label>
+          <input id="weekdays" type="checkbox">Mon - Fri</input>
+          <input id="weekends" type="checkbox">Sat/Sun</input>
+        
         </div>
       </div>
 
 
-
+       <div id="remindme" class="switch">
+            <input id="cmn-toggle-9" class="cmn-toggle cmn-toggle-yes-no" type="checkbox">
+            <label for="cmn-toggle-9" data-on="Cancel" data-off="Remind Me!"></label>
+          </div>  
       </div>
 
     </div>
-    <a href="http://www.spoonrocket.com" target="_blank" id="bottomLink">Open SpoonRocket.com</a>
+	<p class="tinyText" id="reminderSet">your reminder has been set!</p>
+	<!--<p class="tinyText" id="reminderNotSet">no reminder set!</p>-->
+<br>
+    <a href="http://www.spoonrocket.com" target="_blank" id="bottomLink">
+    View SpoonRocket's Menu
+    </a>
     <div id="regid" style="display:none">
     The registration ID for push notifications is <br /> <b id="registrationId">test</b>
     </div>
+
 
   <script type="text/javascript" src="js/popup.js"></script>
   </body>

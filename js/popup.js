@@ -3,6 +3,8 @@ chrome.storage.local.get("registrationId", function(result){
     document.getElementById("registrationId").innerHTML = result.registrationId;
   });
 
+
+
 function setAlarm(){
   // Set the alarm when the toggle or clock is changed
 
@@ -44,8 +46,9 @@ chrome.storage.local.get(["alarmTime","alarmToggle", "weekdays", "weekends"] , f
   // Set the time based on storage
   rome(document.getElementById("time"), {
     date: false,
-    timeFormat: 'h:mm a',
-    timeInterval: 15 * 60,
+    timeFormat: 'hh:mm a',
+    timeInterval: 30 * 60,
+   
     initialValue: result.alarmTime || "11:00 am",
     styles: {
       container: 'timeContainer',
@@ -76,3 +79,11 @@ chrome.storage.local.get(["alarmTime","alarmToggle", "weekdays", "weekends"] , f
   weekends.onclick = setAlarm;
 
 });
+
+
+jQuery("#remindme").live('click', function() {
+    $("#reminderSet").toggle(5);
+//    $("#reminderNotSet").toggle(1000);
+});
+
+
