@@ -1,0 +1,92 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin-top: 4px;
+}
+h1 {
+  line-height: 32px;
+}
+h1 img {
+  padding-right: 5px;
+}
+h2 {
+  font-size: 18px;
+  color: #e3553c;
+}
+#roundlogo {
+  position: relative;
+  top: 5px;
+
+}
+a#hedlink {
+  text-decoration: none;
+  color: #e3553c;
+
+}
+a#bottomLink {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px;
+  color: white;
+  background-color: #e3553c;
+  text-decoration: none;
+
+
+
+}
+a#hedlink:focus {
+  outline: none;
+}
+#reminders {
+
+}
+#clock {
+  width: 500px;
+  font-size: 18px;
+  color: #e3553c;
+
+}
+#clockInput {
+  font-size: 12px;
+
+}
+#clock div {
+  display: inline-block;
+
+}
+#remindme {
+  margin-left: 15px;
+
+}
+#labelRemindMe {
+  font-weight: bold;
+
+}
+#time {
+
+}
+.time {
+  border-bottom: 1px dotted #e3553c;
+  cursor: pointer;
+}
+.timeList {
+  width: 145px;
+  display: none;
+  position: absolute;
+  overflow-y: scroll;
+  max-height: 160px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  color: #e3553c;
+}
+.timeOption {
+  cursor: pointer;
+  background-color: #fff;
+  color: #e3553c;
+}
+.timeOption:hover {
+  background-color: #ccc;
+
+}
+
+

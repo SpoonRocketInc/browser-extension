@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/rome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/popup.css" />
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/rome.standalone.min.js"></script>
+  </head>
+  <body>
+    <div id="reminders">
+      <h1 id="spoonrockethed">
+        <a id="hedlink" href="https://www.spoonrocket.com" target="_blank">
+          <img id="roundlogo" height="32" src="icons/roundlogo.png" />SpoonRocket
+        </a>
+      </h1>
+      <h2>Remind Me</h2>
+
+      Tired of forgetting to order food until you're already beyond hungry? Let us know when you want to order, and we'll pop up a quick no-pressure reminder.
+
+      <div id="clock">
+        <div id="time">
+        </div>
+        <div id="clockInput">
+          <input id="weekdays" type="checkbox">Monday - Friday</input>
+          <input id="weekends" type="checkbox">Saturday/Sunday</input>
+          <input id="remindme" type="checkbox"></input>
+          <label id="labelRemindMe">Remind me</label>
+        </div>
+      </div>
+
+
+
+      </div>
+
+    </div>
+    <a href="http://www.spoonrocket.com" target="_blank" id="bottomLink">Open SpoonRocket.com</a>
+    <div id="regid" style="display:none">
+    The registration ID for push notifications is <br /> <b id="registrationId">test</b>
+    </div>
+
+  <script type="text/javascript" src="js/popup.js"></script>
+  </body>
+</html>
