@@ -46,6 +46,8 @@ chrome.storage.local.get(["alarmTime","alarmToggle", "weekdays", "weekends"] , f
   // Set the time based on storage
   rome(document.getElementById("time"), {
     date: false,
+    min: "8:00 am",
+    max: "23:30",
     timeFormat: 'hh:mm a',
     timeInterval: 30 * 60,
    
