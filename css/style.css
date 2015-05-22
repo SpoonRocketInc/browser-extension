@@ -21,21 +21,22 @@
 input.cmn-toggle-yes-no + label {
 	/* text */
 	color: white;
-	font-size:14px;
+	font-size:18px;
 	text-align:center;
+	font-weight:normal;
 	
 	/* appearance */
   	background:#6eb9b1;
 	cursor: pointer;
-	border-radius:60px;
+	border-radius:80px;
 	padding:24px 12px; /*height width*/
-	width:100px;
+	width:120px;
 	
 	/*position*/
 	margin-top:20px;
 	position: relative;
 	left:50%;
-	margin-left:-60px;
+	margin-left:-72px;
 }
 input.cmn-toggle-yes-no + label:before, input.cmn-toggle-yes-no + label:after {
   display: block;
@@ -63,7 +64,14 @@ border-radius:60px;
   -ms-backface-visibility: hidden;
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
+  
+    -webkit-transition:   background-color 0.5s;
+  transition:    background-color 0.5s;
+
 }
+input.cmn-toggle-yes-no + label:hover:before {
+  background-color:#68b3ab}
+
 input.cmn-toggle-yes-no + label:after {
 border-radius:60px;
   background-color: #ddd;
@@ -88,6 +96,8 @@ border-radius:60px;
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
+
 input.cmn-toggle-yes-no:checked + label:before {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
