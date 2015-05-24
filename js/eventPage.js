@@ -1,4 +1,4 @@
-var appId = "75837997391";
+var appId = "501973175312";
 
 function resetAlarm(){
   // Reset it after it goes off
