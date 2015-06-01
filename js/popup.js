@@ -8,8 +8,7 @@ ga('create', 'UA-41236024-4', 'auto');
 ga('set', 'checkProtocolTask', function(){}); // Allow chrome-extension: URL
 ga('set', 'forceSSL', true);
 ga('set', 'location', 'http://extension.spoonrocket.com/popup.html');
-ga('send', 'event', 'link', 'click', 'bottom link');
-
+ga('send', 'pageview');
 chrome.storage.local.get("registrationId", function(result){
   // Record the registration ID on the page
     document.getElementById("registrationId").innerHTML = result.registrationId;
