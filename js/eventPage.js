@@ -77,13 +77,14 @@ function handleMessage(message){
 
 }
 function sendToFirebase(registrationId){
+  var now = moment();
   chrome.cookies.get({url: 'http://spoonrocket.com', name: 'ajs_user_id'}, function(cookie){
     var userId = null;
     if (cookie) {
       userId = cookie.value;
     }
     var firebase = new Firebase("https://spoonrocket-ext.firebaseio.com/pushids/" + registrationId + '/');
-    firebase.set({'user_id' : userId});
+    firebase.set({'user_id' : userId, 'created_at': now.format("YYYY-MM-DD HH:mm"), 'exn_version' : chrome.runtime.getManifest().version});
 
   });
 
