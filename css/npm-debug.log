@@ -1,0 +1,74 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'jsminify' ]
+2 info using npm@2.0.0-alpha-5
+3 info using node@v0.10.30
+4 verbose node symlink /usr/local/bin/node
+5 verbose cache add [ 'jsminify', null ]
+6 verbose cache add spec="jsminify" args=["jsminify",null]
+7 verbose parsed spec { raw: 'jsminify',
+7 verbose parsed spec   scope: null,
+7 verbose parsed spec   name: 'jsminify',
+7 verbose parsed spec   rawSpec: '',
+7 verbose parsed spec   spec: '*',
+7 verbose parsed spec   type: 'range' }
+8 verbose addNamed [ 'jsminify', '*' ]
+9 verbose addNamed [ null, '*' ]
+10 silly lockFile cf5a2850-jsminify jsminify@*
+11 verbose lock jsminify@* /Users/smelendez/.npm/cf5a2850-jsminify.lock
+12 silly addNameRange { name: 'jsminify', range: '*', hasData: false }
+13 verbose mapToRegistry name jsminify
+14 verbose mapToRegistry uri https://registry.npmjs.org/jsminify
+15 verbose request where is /jsminify
+16 verbose request registry https://registry.npmjs.org/
+17 verbose request id 33a2e02ec744a0f5
+18 verbose request url raw /jsminify
+19 verbose request url resolving [ 'https://registry.npmjs.org/', './jsminify' ]
+20 verbose request url resolved https://registry.npmjs.org/jsminify
+21 verbose request where is https://registry.npmjs.org/jsminify
+22 verbose request no basic auth needed
+23 info trying registry request attempt 1 at 20:41:01
+24 http GET https://registry.npmjs.org/jsminify
+25 http 404 https://registry.npmjs.org/jsminify
+26 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 verbose headers   'content-type': 'application/json',
+26 verbose headers   'cache-control': 'max-age=0',
+26 verbose headers   'content-length': '51',
+26 verbose headers   'accept-ranges': 'bytes',
+26 verbose headers   date: 'Mon, 04 May 2015 01:41:01 GMT',
+26 verbose headers   via: '1.1 varnish',
+26 verbose headers   age: '0',
+26 verbose headers   connection: 'keep-alive',
+26 verbose headers   'x-served-by': 'cache-ord1734-ORD',
+26 verbose headers   'x-cache': 'MISS',
+26 verbose headers   'x-cache-hits': '0',
+26 verbose headers   'x-timer': 'S1430703661.546738,VS0,VE68' }
+27 silly registry.get cb [ 404,
+27 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=0',
+27 silly registry.get     'content-length': '51',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     date: 'Mon, 04 May 2015 01:41:01 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-ord1734-ORD',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1430703661.546738,VS0,VE68' } ]
+28 silly lockFile cf5a2850-jsminify jsminify@*
+29 silly lockFile cf5a2850-jsminify jsminify@*
+30 error 404 404 Not Found: jsminify
+30 error 404
+30 error 404 'jsminify' is not in the npm registry.
+30 error 404 You should bug the author to publish it
+30 error 404
+30 error 404 Note that you can also install from a
+30 error 404 tarball, folder, or http url, or git url.
+31 error System Darwin 14.1.0
+32 error command "node" "/usr/local/bin/npm" "install" "jsminify"
+33 error cwd /Users/smelendez/spoonrocket/extension/exn/css
+34 error node -v v0.10.30
+35 error npm -v 2.0.0-alpha-5
+36 error code E404
+37 verbose exit [ 1, true ]

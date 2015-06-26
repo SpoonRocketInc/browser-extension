@@ -1,92 +1,265 @@
+
+
+/*========================
+          pop up
+==========================*/
+
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  margin-top: 4px;
+  font-family: 'Karla', Helvetica, Arial, sans-serif;
+height:380px;
+overflow:none;
+  width:240px;
+  background:#fbfcfd;
+  padding:20px;
+  -webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	text-align:center;
 }
-h1 {
-  line-height: 32px;
-}
-h1 img {
-  padding-right: 5px;
-}
-h2 {
-  font-size: 18px;
-  color: #e3553c;
-}
+
+/*========================
+           header
+==========================*/
+
 #roundlogo {
-  position: relative;
-  top: 5px;
+ 
 
 }
+
 a#hedlink {
   text-decoration: none;
   color: #e3553c;
 
 }
-a#bottomLink {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px;
-  color: white;
-  background-color: #e3553c;
-  text-decoration: none;
 
-
-
-}
 a#hedlink:focus {
   outline: none;
 }
+/*========================
+           text
+==========================*/
+
+
+
+h2 { /*title: don't forget to eat*/
+  font-size: 18px;
+  color: #777;
+  line-height:10px;
+}
+
+p{ /* paragraph text */
+font-size:14px;
+line-height:20px;
+color:#888;
+font-weight:normal;
+}
+
+
 #reminders {
 
 }
 #clock {
-  width: 500px;
+/*  width: 500px;
   font-size: 18px;
   color: #e3553c;
-
+*/
 }
 #clockInput {
-  font-size: 12px;
-
+	font-size: 14px;
+	margin:20px;
 }
+
+#weekdays{
+margin:6px;
+}
+
+#weekends{
+
+margin:6px;
+}
+
 #clock div {
-  display: inline-block;
-
+ /* display: inline-block;
+*/
 }
-#remindme {
-  margin-left: 15px;
 
+input[type=checkbox]:not(old) {
+background:black;
+background-color:black;
+display:inline-block;
 }
-#labelRemindMe {
-  font-weight: bold;
 
-}
+
+
+/*========================
+        time picker
+==========================*/
 #time {
+
 
 }
 .time {
-  border-bottom: 1px dotted #e3553c;
+	font-size:32px;
+	border-bottom: 1px dashed #888;
+	cursor: pointer;
+	color: #e3553c;
+
+/*
   cursor: pointer;
+  border: 1px solid #ddd;
+  color: #888;
+  border-radius:6px;
+  padding:8px 14px;
+*/
+
+}
+.time:hover {
+	color: #c84b35;
+	border-bottom: 1px dashed #c84b35;
 }
 .timeList {
-  width: 145px;
-  display: none;
-  position: absolute;
-  overflow-y: scroll;
-  max-height: 160px;
-  left: 0;
-  right: 0;
-  background-color: #fff;
-  color: #e3553c;
+
+	/* text */
+	color: #888;
+	text-align:left;
+  	
+	/* general */
+
+	width: 120px;
+	display: none;
+	overflow-y: scroll;
+	z-index:1000;
+	max-height: 100px;
+  	border-radius:0px 0px 3px 3px;
+  	background-color: #fafafc;
+	box-shadow: 2px 2px 2px rgba(80,80,100,0.2);
+  
+	/* position */	
+	position: absolute;
+	left: 50%;
+	margin-left:-60px;	
+	right: 0;
+  
+  
+	border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+
 }
 .timeOption {
-  cursor: pointer;
-  background-color: #fff;
-  color: #e3553c;
+	cursor: pointer;
+	padding:3px 0px 3px 15px;
+	/*top right bottom left*/
+
+	color: #888;
 }
 .timeOption:hover {
-  background-color: #ccc;
+	background-color: #f2f2f3;
+	color:#555;
+}
 
+
+
+
+/*========================
+  [ remind me button ]
+==========================*/
+
+#remindme {
+
+	/* text 
+	color: white;
+	font-size:14px;
+	text-align:center;*/
+	
+	/* appearance 
+  	background:#6eb9b1;
+	cursor: pointer;
+	border-radius:60px;
+	padding:14px 10px; 
+	width:100px;*/
+	
+	/*position
+	margin-bottom:20px;
+	margin-top:20px;
+	position: relative;
+	left:50%;
+	margin-left:-60px;
+  */
+}
+
+.tinyText, .tinyText p{
+font-size:10px;
+font-size:#999;
+line-height:10px;
+text-align:center;
+position:relative;
+transform: none
+}
+
+/*
+
+
+style="display: block; 
+overflow: hidden; 
+height: 6.35569036122487px; 
+padding: 0px; 
+margin: 6.35569036122487px 0px; 
+width: 165.247949391847px; 
+opacity: 0.635569036122487;"
+*/
+#reminderSet{
+
+display: none; 
+overflow: hidden; 
+position:relative;
+margin-left:-80px;
+left:50%;
+height: 20px;
+padding: 0px; 
+width: 160px;
+opacity: 1;
+}
+#reminderNotSet{
+display: none; 
+overflow: hidden; 
+position:relative;
+margin-left:-120px;
+left:50%;
+height: 20px;
+padding: 0px; 
+width: 240px;
+opacity: 1;
+  }
+/*========================
+   link to spoonrocket
+==========================*/
+
+
+a#bottomLink, #bottomLink a {
+	position: absolute;
+	width:200px;
+	font-size:12px;
+	font-weight:bold;
+	
+	left:50%;
+	margin-left:-100px;
+	text-align:center;
+  bottom: 40px;
+  color: #888;
+/*  border-bottom:1px solid #888;
+  border-top: 1px solid #ddd;*/
+  padding-top:20px;
+  text-decoration: none;
+
+
+  -webkit-transition: opacity 0.5s;
+  transition:  opacity 0.5s;
+
+}
+
+a#bottomLink:hover, #bottomLink a:hover {
+opacity:0.6;
 }
 
 

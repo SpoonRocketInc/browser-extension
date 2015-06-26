@@ -1,8 +1,9 @@
 {
   "manifest_version": 2,
   "name": "SpoonRocket",
-  "version": "0.0.8",
+  "version": "0.0.14",
   "description" : "Good Food, Fast",
+  "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
   
   "icons" : {
     "16" : "icons/icon16.png",
